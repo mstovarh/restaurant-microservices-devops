@@ -1,0 +1,16 @@
+services:
+
+  order-service:
+    build: ./order-service
+    ports:
+      - "3001:3000"
+
+  kitchen-service:
+    build: ./kitchen-service
+    ports:
+      - "3002:3000"
+
+  delivery-service:
+    build: ./delivery-service
+    ports:
+      - "3003:3000"
