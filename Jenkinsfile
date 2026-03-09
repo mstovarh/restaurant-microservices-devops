@@ -6,7 +6,7 @@ pipeline {
 
   stage('Checkout') {
    steps {
-    git 'https://github.com/mstovarh/restaurant-microservices-devops.git'
+    git branch: 'main', url: 'https://github.com/mstovarh/restaurant-microservices-devops.git'
    }
   }
 
