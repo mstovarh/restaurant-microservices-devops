@@ -4,9 +4,9 @@ pipeline {
 
  stages {
 
-  stage('Checkout') {
+  stage('Clean Workspace') {
    steps {
-    git branch: 'main', url: 'https://github.com/mstovarh/restaurant-microservices-devops.git'
+    deleteDir()
    }
   }
 
