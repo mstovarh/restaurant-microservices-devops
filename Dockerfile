@@ -8,8 +8,3 @@ RUN apt-get update && apt-get install -y \
     docker-compose \
     git \
     curl
-
-# Dar permisos a Jenkins para usar Docker
-RUN usermod -aG docker jenkins
-
-USER jenkins
