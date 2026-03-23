@@ -4,12 +4,6 @@ pipeline {
 
  stages {
 
-  stage('Clean Workspace') {
-   steps {
-    deleteDir()
-   }
-  }
-
   stage('Build Docker Images') {
    steps {
     sh 'docker compose build'
